@@ -8,7 +8,7 @@ namespace PolarisServer.Packets.Handlers
     {
         #region implemented abstract members of PacketHandler
 
-        public override void HandlePacket(Client context, byte[] data, uint position, uint size)
+        public override void HandlePacket(Client context, byte flags, byte[] data, uint position, uint size)
         {
             if (context.Character == null)
                 return;
@@ -55,7 +55,7 @@ namespace PolarisServer.Packets.Handlers
 
                 foreach (var c in Server.Instance.Clients)
                 {
-                    if (c.Character == null)
+                    if (c.Character == null || c.CurrentZone != context.CurrentZone)
                         continue;
 
                     c.SendPacket(0x07, 0x00, 0x44, data);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Timers;
+
 using PolarisServer.Network;
 using PolarisServer.Packets.PSOPackets;
 
@@ -8,7 +9,12 @@ namespace PolarisServer
 {
     public class Server
     {
+        public static Server Instance { get; private set; }
+
         private readonly SocketServer _server;
+
+        public List<Client> Clients { get; private set; }
+        public DateTime StartTime { get; private set; }
         public Timer PingTimer;
 
         public Server()
@@ -19,16 +25,12 @@ namespace PolarisServer
             Instance = this;
             StartTime = DateTime.Now;
 
-            PingTimer = new Timer(1000*PolarisApp.Config.PingTime); // 1 Minute default
+            PingTimer = new Timer(1000 * PolarisApp.Config.PingTime); // 1 Minute default
             PingTimer.Elapsed += PingClients;
             PingTimer.Start();
 
             new QueryServer(QueryMode.BlockBalance, 12200);
         }
-
-        public List<Client> Clients { get; private set; }
-        public static Server Instance { get; private set; }
-        public DateTime StartTime { get; private set; }
 
         public void Run()
         {
