@@ -1,4 +1,6 @@
-[![AGPL License](http://img.shields.io/badge/license-AGPL%20v3-red.svg?style=flat-square)](http://opensource.org/licenses/AGPL-3.0) [![Build Status](https://img.shields.io/jenkins/s/http/build.polaris-server.net/PolarisServer.svg?style=flat-square)](http://build.polaris-server.net)
+[![AGPL License](http://img.shields.io/badge/license-AGPL%20v3-red.svg?style=flat-square)](http://opensource.org/licenses/AGPL-3.0) 
+[![Build status](https://ci.appveyor.com/api/projects/status/3ltwll4bck12ey0t?svg=true)](https://ci.appveyor.com/project/cyberkitsune/polarisserver)
+
 
 ## Table of Contents
 
@@ -25,7 +27,7 @@ After installing MD / Xamarin and setting up the Mono runtime, open the solution
 In the future we will hopefully have a buildserver, xbuild / msbuild support and other fancy things.
 
 ### Downloading The Latest Version
-As the `Polaris Private Server` is a work-in-progress alpha, you can find the latest unstable built version here @ [build.polaris-server.net](http://build.polaris-server.net/job/PolarisServer/lastSuccessfulBuild/artifact/PolarisServer/bin/Debug/PolarisServer-Bundle.zip)
+As the `Polaris Private Server` is a work-in-progress alpha, you can find the latest unstable built version here @ [AppVeyor](https://ci.appveyor.com/project/cyberkitsune/polarisserver/build/artifacts)
 
 ### Documentation
 All available documentation for the server can be found on the project wiki @ [pso2proxy.cyberkitsune.net/wiki](http://pso2proxy.cyberkitsune.net/wiki)
