@@ -1,6 +1,14 @@
+MOVED TO POLARISCORE https://github.com/PolarisTeam/PolarisCore
+
+
+
+
+
+
+
+
 [![AGPL License](http://img.shields.io/badge/license-AGPL%20v3-red.svg?style=flat-square)](http://opensource.org/licenses/AGPL-3.0) 
 [![Build status](https://ci.appveyor.com/api/projects/status/3ltwll4bck12ey0t?svg=true)](https://ci.appveyor.com/project/cyberkitsune/polarisserver)
-
 
 ## Table of Contents
 
@@ -15,7 +23,7 @@
   * [Core Maintainers](#core-maintainers)
 
 ## What is it?
-`Polaris Private Server` is an open source game private server for the Japanese MMORPG Phantasy Star Online 2. It is currently work-in-progress alpha, under heavy development and is not yet recommended for production use.
+`Polaris Private Server` is an open source game private server. It is currently work-in-progress alpha, under heavy development and is not yet recommended for production use.
 
 ## Installation
 As `Polaris Private Server` is a work-in-progress there is no set way of installaing and running, in future releases we hope to have this information stored in an INSTALL file. Until then you can either build or download and run the latest version.
@@ -56,7 +64,7 @@ Currently, you can contribute to the Polaris Private Server project by:
 * Submitting a detailed [issue](https://github.com/PolarisTeam/PolarisServer/issues/new).
 * [Forking the project](https://github.com/PolarisTeam/PolarisServer/fork), and sending a pull request back to for review.
 
-There is an IRC channel `#pso2` on BadnikNET (irc.badnik.net:6667), for talking directly
+There is an IRC channel `#pso2` on BadnikZone (irc.badnik.zone:6667), for talking directly
 with testers and developers (when awake and present, etc.). However any questions pertaining to the release dates or asking for hacks will be ignored, and you may be banned from the channel.
 
 ### Core Maintainers
